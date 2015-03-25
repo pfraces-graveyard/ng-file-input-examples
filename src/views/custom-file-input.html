@@ -1,0 +1,17 @@
+<h2 ng-bind="vm.title"></h2>
+
+<p>
+    Source:
+    <a href="http://geniuscarrier.com/how-to-style-a-html-file-upload-button-in-pure-css/">
+        How to Style a HTML file upload button in Pure CSS
+    </a>
+    <br />
+</p>
+
+<!-- the hack -->
+
+<input ng-model="vm.selectedFile" class="text-input" placeholder="Select file" disabled="disabled" />
+<div class="file btn primary">
+    <span>Select</span>
+    <input type="file" onchange="angular.element(this).scope().vm.selectFile(this.files[0])" />
+</div>
