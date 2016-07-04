@@ -1,5 +1,5 @@
-Angular bindings for file inputs
-================================
+Angular file input examples
+===========================
 
 References
 
